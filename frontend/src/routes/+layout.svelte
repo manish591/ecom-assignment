@@ -33,7 +33,7 @@
 						<div
 							in:fly={{ x: '-100%', duration: 300, opacity: 1 }}
 							out:fly={{ x: '-100%', duration: 300, opacity: 1 }}
-							class="fixed overflow-x-hidden inset-0 bg-background z-10 grid grid-cols-1 grid-rows-[auto_1fr_auto]"
+							class="fixed overflow-x-hidden inset-0 bg-background z-30 grid grid-cols-1 grid-rows-[auto_1fr_auto]"
 						>
 							<div class="border-b border-primary/20 py-6">
 								<div class="flex items-center justify-between w-[90%] mx-auto">
@@ -149,6 +149,32 @@
 	</div>
 </header>
 <slot />
+<footer class="bg-[#352820] text-foreground/70">
+	<div class="border-t border-foreground/10">
+		<div class="w-[95%] max-w-[1360px] mx-auto md:grid md:grid-cols-2">
+			<div class="py-6">
+				<h3 class="text-xl">Local</h3>
+				<p class="text-sm mt-4 md:w-[50%]">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aspernatur quae voluptate
+					perspiciatis id accusantium fugiat omnis beatae illum nam.
+				</p>
+			</div>
+			<div class="py-6">
+				<h3 class="text-xl">Quick Links</h3>
+				<div class="mt-4 grid grid-cols-1 gap-2">
+					<a href="/" class="underline">Home</a>
+					<a href="/" class="underline">Products</a>
+					<a href="/" class="underline">Login</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="py-6 border-t border-foreground/10">
+		<div class="w-[95%] max-w-[1360px] mx-auto">
+			<h3 class="text-sm">Copyright © 2024 LOCAL DRINKS</h3>
+		</div>
+	</div>
+</footer>
 
 <style>
 	.slide {

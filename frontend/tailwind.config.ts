@@ -31,7 +31,7 @@ const config: Config = {
 				},
 			},
 			fontFamily: {
-				sans: [...fontFamily.sans],
+				sans: [...fontFamily.mono],
 				logo: ["Satisfy", "cursive"]
 			}
 		}
