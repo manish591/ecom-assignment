@@ -2,11 +2,15 @@
   "name": "backend",
   "version": "1.0.0",
   "main": "index.js",
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/src/seed.ts"
+  },
   "scripts": {
     "build": "tsc -b",
     "start": "yarn build && node dist/server.js",
     "dev": "nodemon server.ts",
     "studio": "npx prisma studio",
+    "db:seed": "prisma db seed",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prettier:fix": "prettier . --write"

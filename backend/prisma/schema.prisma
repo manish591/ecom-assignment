@@ -36,3 +36,27 @@ model Session {
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
 }
+
+model Collection {
+  id       String    @id @default(cuid())
+  name     String
+  image    String
+  products Product[]
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+}
+
+model Product {
+  id            String @id @default(cuid())
+  name          String
+  image         String
+  marked_price  Int
+  sale_price    Int
+  collection_id String
+
+  collection Collection @relation(fields: [collection_id], references: [id])
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+}
