@@ -3,6 +3,7 @@
 	import { Icon } from '$lib/components/ui/icon';
 	import CollectionsList from './collections-list.svelte';
 	import MobileNavbar from './mobile-navbar.svelte';
+	import { userLoginStatus } from '$lib/store/user';
 </script>
 
 <header>
@@ -21,14 +22,21 @@
 					>
 				</div>
 				<div class="items-center gap-4 hidden md:flex">
-					<Button class="flex items-center gap-3">
-						<Icon src="/cart.svg" alt="cart" />
-						<span>$12.56 (0)</span>
-					</Button>
-					<Button variant="outline" class="flex items-center gap-3">
-						<Icon src="/account.svg" alt="cart" />
-						<span>Account</span>
-					</Button>
+					{#if !$userLoginStatus}
+						<a href="/login">
+							<Button variant="outline" class="flex items-center gap-3">
+								<Icon src="/account.svg" alt="cart" />
+								<span>Login</span>
+							</Button>
+						</a>
+					{:else}
+						<a href="/cart">
+							<Button class="flex items-center gap-3">
+								<Icon src="/cart.svg" alt="cart" />
+								<span>$12.56 (0)</span>
+							</Button>
+						</a>
+					{/if}
 				</div>
 			</div>
 		</div>

@@ -13,6 +13,8 @@
 		<h1 class="text-5xl md:text-7xl mt-6 md:mt-8 w-[60%] mx-auto leading-tight font-bold">
 			Organic Drinks
 		</h1>
-		<Button class="mt-6 md:mt-10 px-7">View Products</Button>
+		<a href="/collections">
+			<Button class="mt-6 md:mt-10 px-7">View Collections</Button>
+		</a>
 	</div>
 </div>

@@ -1,5 +1,7 @@
+export const BASE_URL = "http://localhost:8000/api/v1"
+
 export const COLLECTION_LIST = ['Red', 'White', 'Rose', 'Sparkling', 'Not wine'];
-export const FOOTER_LINKS = ['home', 'login', "collections"]
+export const FOOTER_LINKS = ['home', 'login', "collections", "signup"]
 export const COLLECTIONS_DATA = [
   {
     id: "1",

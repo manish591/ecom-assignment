@@ -17,7 +17,7 @@
 				<div class="mt-4 grid grid-cols-1 gap-2">
 					{#each FOOTER_LINKS as link (link)}
 						<a
-							href="/"
+							href={link === 'home' ? '/' : link}
 							class="capitalize inline-block w-max cursor-pointer overflow-hidden hover:text-accent text-sm relative before:content-[''] before:absolute before:h-[1px] before: before:w-full before:bg-accent before:bottom-0 hover:before:w-full before:-translate-x-full hover:before:translate-x-0 before:transition"
 							>{link}</a
 						>

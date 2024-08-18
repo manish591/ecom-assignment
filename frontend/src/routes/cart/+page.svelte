@@ -10,7 +10,7 @@
 		<Breadcrumb>
 			<a href="/">Home</a>
 			<BreadcrumbSeparator />
-			<a href="/">Cart</a>
+			<a href="/cart">Cart</a>
 		</Breadcrumb>
 		<div class="mt-10">
 			<h2 class="text-4xl md:text-5xl font-bold">Shopping Cart</h2>
